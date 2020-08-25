@@ -1,0 +1,967 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lookout</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style type="text/css">
+			/* xs */
+			@media (min-width:1px) {
+				#my_h32{
+					font-size: 28px !important;
+				}
+			}
+			@media (min-width: 768px) {
+				#my_h32{
+					font-size: 40px !important;
+				}
+			}
+			/* lg */
+			@media (min-width: 992px){
+				#my_h31{
+					font-size: 40px !important;
+				}
+			}
+			/* 渐变 */
+			#my_div4{
+				background-image: linear-gradient(to right, #46C9C8 , #02C656);
+			}
+			.my_a{
+				color: #47c9c9;
+				letter-spacing: .05em;
+				line-height: 14px;
+				font-weight: 600;
+				text-decoration: none !important;
+				padding: 0 30px;
+			}
+			.my_a:hover{
+				color: #4FE3E3;
+			}
+			.my_p{
+				color: #656f74;
+				font-size: 17px;
+				font-weight: 400;
+				letter-spacing: .02em;
+			}
+			/*  */
+			@media (min-width:1px) {
+				#my_img{
+					width: 100%;
+				}
+			}
+			/* xs */
+			@media (min-width:1px) {
+				#my_div3{
+					padding:80px 0;
+				}
+			}
+			@media (min-width:768px) {
+				#my_h3{
+					font-size: 40px !important;
+				}
+			}
+			.a2{
+				color: #47c9c9;
+				font-size: 12px;
+				font-weight: bold;
+			}
+			/* 三个格子布局 */
+			@media (min-width: 1px){
+				#my_div1{
+					 margin-top: 400px;
+				}
+				.box{
+					margin-bottom: 5px;
+					font-size: 20px;
+					color: #fff;
+				}
+			}
+			@media (min-width: 576px){
+				#my_div1{
+					 margin-top: 546px;
+				}
+			}
+			/* md */
+			@media (min-width: 768px){
+				.box{
+					margin-bottom: 0px;
+				}
+				#my_div2{
+					margin: 0 86px;
+				}
+			}
+			#my_div{
+				color: #fff;
+				padding:120px 0px 0 120px;
+			}
+			#my_h1{
+				color: #fff !important;
+				padding-bottom: 30px;
+			}
+			#my_p{
+				padding-bottom: 30px;
+			}
+			/* 图片上字体大小 */
+			/* xs */
+			@media (min-width: 1px){
+				#my_h1{
+					font-size: 28px !important;
+				}
+				#my_p{
+					font-size: 16px;
+				}
+			}
+			/* sm */
+			@media (min-width: 576px){
+				#my_h1{
+					font-size: 36px !important;
+				}
+				#my_p{
+					font-size: 22px;
+				}
+			}
+			/* lg */
+			@media (min-width: 992px){
+				#my_h1{
+					font-size: 56px !important;
+				}
+			}
+			/* 背景图片 */
+			/* xs */
+			@media (min-width: 1px){
+			#banner {
+				position: absolute;
+				top: 60px;
+				left: 0px;
+				width: 100%;
+				height: 380px;
+				background-image: url(img/Homepage-Hero-600x380.png)
+				}
+			}
+			/* sm */
+			@media (min-width: 576px){
+			#banner {
+				position: absolute;
+				top: 60px;
+				left: 0px;
+				width: 100%;
+				height: 526px;
+				background-image: url(img/Homepage-Hero-1200x600.png)
+				}
+			}
+			/* lg */
+			@media (min-width: 992px){
+			#banner {
+				position: absolute;
+				top: 60px;
+				left: 0px;
+				width: 100%;
+				height: 526px;
+				background-image: url(img/Homepage-Hero-1920x526.png)
+				}
+			}
+			 /* xl  */
+			@media (min-width: 1200px){
+			#banner {
+				position: absolute;
+				top: 60px;
+				left: 0px;
+				width: 100%;
+				height: 526px;
+				background-image: url(img/Homepage-Hero-2560x526.png);
+				}
+			}
+			.my_logo{
+				height: 30px;
+				line-height: 30px;
+			}
+			.my_logo1{width: 20px;}
+			.a{color: #777 !important;text-decoration: none !important;font-size: 15px;}
+			.a:hover{color: #000 !important;}
+			.a1{color: #00c653 !important;text-decoration: none !important;}
+			.a1:hover{color: #ccc !important;}
+			
+			@media (min-width:1px) {
+				#my_text{
+					font-size: 16px;
+					font-weight: 400;
+					color: #025c85;
+					letter-spacing: -.02em;
+				}
+			}
+			@media (min-width:768px) {
+				#my_text{
+					font-size: 22px;
+				}
+			}
+			
+			.border-top {
+			  border-top: 4px solid #47c9c9 !important;
+			}
+			
+			@media (min-width:1px) {
+				#my_p1{
+					font-size: 22px;
+					color: #fff;
+				}
+			}
+			@media (min-width:768px) {
+				#my_p1{
+					font-size: 28px;
+				}
+			}
+			.my_a1{
+				text-decoration: none !important;
+			}
+			.btn-dark {
+			  color: #fff;
+			  background-color: #656f74;;
+			  border-color: #656f74;;
+			}
+			#my_div5{
+				color: #88959b;
+				font-size: 14px;
+			}
+			.a20{
+				color: #88959b;
+				font-size: 14px;
+			}
+			.a20:hover{
+				color: #fff;
+				text-decoration: none;
+			}
+			.p20{
+				font-size: 10px;
+				color: #88959b;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<!-- 网页头部 -->
+			<div class="navbar navbar-light navbar-expand-xl">
+				<!-- 1.永远显示的img标签 -->
+				<a href="#">
+					<img  class="navbar-brand my_logo" src="img/lookout-logo-120x23.svg" >
+				</a>
+				<!-- 2.小屏显示，大屏隐藏的按钮 -->
+				<button data-toggle="collapse" data-target="#demo" class="navbar-toggler">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- 3.折叠的内容div.collapse>ul>li>a -->
+				<div id="demo" class="collapse navbar-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="dropdown-toggle nav-link a mx-4" href="#">Platform</a>
+						</li>
+						<li class="nav-item">
+							<a class="dropdown-toggle nav-link a mx-4" href="#">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="dropdown-toggle nav-link a mx-4" href="#">Resources</a>
+						</li>
+						<li class="nav-item">
+							<a class="dropdown-toggle nav-link a mx-4" href="#">Company</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link a1 mx-4" href="#">Contact Sales</a>
+						</li>
+						<li class="nav-item">
+							<a class="dropdown-toggle nav-link a mx-4" href="#">Log In</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link a mx-4" href="#">
+								<img class="my_logo1" src="./img/search-icon.svg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 头部图片 -->
+			<div id="banner">
+				<div id="my_div">
+					<h1 id="my_h1">Security that goes everywhere you go</h1>
+					<p id="my_p">Protect your organization with Lookout, the leader in mobile security</p>
+					<a class="btn btn-info" href="#">90-Day Free Trial</a>
+				</div>
+			</div>
+			<!-- 三个格子 -->
+			<div id="my_div1" class="row no-gutters d-flex">
+				<div class="col-sm-12 col-md-3 bg-dark pt-3 px-3 box">
+					<h5>Phone spear phishing ruffles feathers at Twitter</h5>
+					<p>
+						<a class="a2" href="#">Read the blog</a>
+					</p>
+				</div>
+				<div id="my_div2" class="col-sm-12 col-md-3 bg-dark pt-3 px-3 box">
+					<h5>Global mobile phishing encounters surged by 37% amid shift to work-from-home</h5>
+					<p>
+						<a class="a2" href="#">Read the blog</a>
+					</p>
+				</div>
+				<div class="col-sm-12 col-md-3 bg-dark pt-3 px-3 box">
+					<h5>Work from home is the new normal. Is your workforce secure?</h5>
+					<p>
+						<a class="a2" href="#">Read the blog</a>
+					</p>
+				</div>
+			</div>
+			<!-- Why Lookout for iOS, Android and Chrome OS盒子 -->
+			<div id="my_div3" class="text-center">
+				<h3 id="my_h3">Why Lookout for iOS, Android and Chrome OS</h3>
+			</div>
+			
+			<div class="row no-gutters">
+				<div class="col-md-12 col-lg-6">
+					<h4 class="py-3">
+						Lookout secures our digital future
+					</h4>
+					<p class="my_p">
+						We protect your smartphone, tablet and Chromebook because they are at the intersection of the personal you and the professional you. Our mission is to secure and empower our digital future in a privacy-focused world where these devices are essential to all we do for work and play.
+					</p>
+					<a class="my_a" href="#">
+						<p>
+							Find out how we do it →
+						</p>
+					</a>
+					<a class="my_a" href="#">
+						<p>
+							Explore mobile phishing data →
+						</p>
+					</a>
+				</div>
+				<div class="col-md-12 col-lg-6">
+					<a href="">
+						<img id="my_img" src="./img/HP-Lookout-Secures-Our-Digital-Future_1688x800.png" alt="">
+					</a>
+				</div>
+			</div>
+			<br>
+			<hr >
+			<br>
+			
+			<div class="row no-gutters">
+				<div class="col-md-12 col-lg-6">
+					<a href="">
+						<img id="my_img" src="./img/3794.png" alt="">
+					</a>
+				</div>
+				<div class="col-md-12 col-lg-6">
+					<h4 class="py-3">
+						Protect the personal and professional you
+					</h4>
+					<p class="my_p">
+						The broad adoption of mobile devices have created new and endless ways for cybercriminals to convince you to willingly use your mobile device for their unlawful gain.
+					</p>
+					<p class="my_p">
+						The most common start of a cyberattack is a phishing link and mobile devices have enabled new ways to send them to you. Phishing risks no longer simply hide in email, but in messaging, social media, and even dating apps. Because we use these devices for both, protecting against phishing is critical for our personal and professional lives.
+					</p>
+					<a class="my_a" href="#">
+						<p>
+							Why is phishing such a massive problem?  →
+						</p>
+					</a>
+				</div>
+			</div>
+			<br>
+			<hr >
+			<br>
+			
+			<div class="row no-gutters">
+				<div class="col-md-12 col-lg-6">
+					<h4 class="py-3">
+						Using AI and data for security
+					</h4>
+					<p class="my_p">
+						We enable consumers and employees to protect their data, and to securely stay connected without violating their privacy and trust. Our platform uses artificial intelligence to analyze data from nearly 200 million devices and over 100 million apps to protect you from the full spectrum of mobile risk.
+					</p>
+					<p class="my_p">
+						As a result, Lookout delivers modern endpoint security with the most comprehensive protection from device, network, app, and phishing threats without prying into your data.
+					</p>
+					<a class="my_a" href="#">
+						<p>
+							Understand our solutions   →
+						</p>
+					</a>
+				</div>
+				<div class="col-md-12 col-lg-6">
+					<a href="">
+						<img id="my_img" src="./img/HP-Using-AI-and-Data-for-Security_1688x800%2520v2.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="my_div4" class="py-5">
+			<div class="container">
+				<div class="py-5">
+					<h3 id="my_h31" class="text-center text-white">
+						Explore our products
+					</h3>
+				</div>
+				<!-- 四个盒子 -->
+					<div class="row no-gutters text-center">
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="bg-white mx-2 py-lg-3">
+									<h5>Enterprise</h5>
+									<p>
+										We secure your cloud data while empowering productivity regardless of where your employees work.
+									</p>
+									<p>
+										<a class="my_a" href="#">
+											Explore Lookout for work
+										</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="bg-white mx-2 py-lg-3">
+									<h5>Enterprise</h5>
+									<p>
+										We secure your cloud data while empowering productivity regardless of where your employees work.
+									</p>
+									<p>
+										<a class="my_a" href="#">
+											Explore Lookout for work
+										</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="bg-white mx-2 py-lg-3">
+									<h5>Enterprise</h5>
+									<p>
+										We secure your cloud data while empowering productivity regardless of where your employees work.
+									</p>
+									<p>
+										<a class="my_a" href="#">
+											Explore Lookout for work
+										</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="bg-white mx-2 py-lg-3">
+									<h5>Enterprise</h5>
+									<p>
+										We secure your cloud data while empowering productivity regardless of where your employees work.
+									</p>
+									<p>
+										<a class="my_a" href="#">
+											Explore Lookout for work
+										</a>
+									</p>
+								</div>
+							</div>
+					</div>
+			</div>
+		</div>
+		<div class="container pt-5">
+			<div class="text-center py-5">
+				<h3 id="my_h32">
+					What research experts say about us
+				</h3>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-sm-12 col-lg-6">
+					<div class="p-5">
+						<p>
+							<img src="./img/IDC-Logo_211x118.png" alt="">
+						</p>
+						<p id="my_text">
+							"Lookout has a strong console and administrative functionality, where it can display risky behavior of devices and apps across an entire network of devices."
+						</p>
+						<p class="py-3">
+							<strong>
+								Phil Hochmuth, Program Vice President, Enterprise Mobility, IDC 2018
+							</strong>
+						</p>
+						<p>
+							<a class="my_a" href="#">
+								Read Report 
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-lg-6">
+					<div class="p-5">
+						<p>
+							<img src="./img/gartner-logo-211x118.png" alt="">
+						</p>
+						<p id="my_text">
+							"Mobile phishing is on the rise. There are numerous channels to reach a mobile device that, unlike email, are not under phishing protection."
+						</p>
+						<p class="py-3">
+							<strong>
+								Market Guide for Mobile Threat Defense, Dionisio Zumerle, Rob Smith 2019
+							</strong>
+						</p>
+						<p>
+							<a class="my_a" href="#">
+								Read Report 
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row mb-5">
+				<div class="col-md-6 col-sm-12 ml-5 mt-5">
+					<p class="mx-5 mt-5">
+						<img src="./img/GartnerPeerReview_logo_lightbg.png" >
+					</p>
+				</div>
+				<div class="col-md-6 d-sm-none">
+					
+				</div>
+			</div>
+		</div>
+		<div class="bg-dark">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-lg-4 my-5 px-3">
+						<h5 class="text-success">
+							Lookout Mobile Endpoint Security
+						</h5>
+						<p>
+							<img src="./img/star.png" alt="">
+						</p>
+						<p class="text-white">
+							November 23, 2019
+						</p>
+						<h6 class="text-success">
+							Reviewer Role
+						</h6>
+						<p class="text-white">
+							Enterprise Architecture and Technology Innovation
+						</p>
+						<h6 class="text-success">
+							Company Size
+						</h6>
+						<p class="text-white">
+							10B - 30B USD
+						</p>
+						<p>
+							
+						</p>
+					</div>
+					<div class="col-lg-7 my-5 px-4">
+						<div class="ml-lg-3">
+							<h4 class="text-white pb-3">
+								Good Tool, And Good Team.
+							</h4>
+							<p class="text-secondary">
+								Director, Office365 Services & Enterprise
+							</p>
+							<p class="text-white pb-3">
+								"deployment to over 50,000 devices was straight forward, however developments seen since have consistantly improved that experience."
+							</p>
+							<p>
+								<a class="my_a" href="#">
+									Read Full Review 
+								</a>
+								<img src="./img/GartnerPeerReview_logo_darkbg.png" alt="" class="w-25">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-dark mt-5">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-lg-4 my-5 px-3">
+						<h5 class="text-success">
+							Lookout Mobile Endpoint Security
+						</h5>
+						<p>
+							<img src="./img/star.png" alt="">
+						</p>
+						<p class="text-white">
+							May 6, 2019
+						</p>
+						<h6 class="text-success">
+							Reviewer Role
+						</h6>
+						<p class="text-white">
+							Security and Risk Management
+						</p>
+						<h6 class="text-success">
+							Company Size
+						</h6>
+						<p class="text-white">
+							Less than 50M USD
+						</p>
+						<p>
+							
+						</p>
+					</div>
+					<div class="col-lg-7 my-5 px-4">
+						<div class="ml-lg-3">
+							<h4 class="text-white pb-3">
+								Implementation Was Simple And Monitoring Is Highly Accurate
+							</h4>
+							<p class="text-secondary">
+								Chief Information Security Officer
+							</p>
+							<p class="text-white pb-3">
+								“Their integration with Microsoft's O365 security stack complements perfectly and aligns with some of our other cybersecurity enhancements."
+							</p>
+							<p>
+								<a class="my_a" href="#">
+									Read Full Review 
+								</a>
+								<img src="./img/GartnerPeerReview_logo_darkbg.png" alt="" class="w-25">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-dark mt-5">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-lg-4 my-5 px-3">
+						<h5 class="text-success">
+							Lookout Mobile Endpoint Security
+						</h5>
+						<p>
+							<img src="./img/star.png" alt="">
+						</p>
+						<p class="text-white">
+							February 26, 2019
+						</p>
+						<h6 class="text-success">
+							Reviewer Role
+						</h6>
+						<p class="text-white">
+							Security and Risk Management
+						</p>
+						<h6 class="text-success">
+							Company Size
+						</h6>
+						<p class="text-white">
+							50M - 200M USD
+						</p>
+						<p>
+							
+						</p>
+					</div>
+					<div class="col-lg-7 my-5 px-4">
+						<div class="ml-lg-3">
+							<h4 class="text-white pb-3">
+								Provides A Number Of Key Features To Keep Mobile Devices Safe
+							</h4>
+							<p class="text-secondary">
+								Security and Risk Management
+							</p>
+							<p class="text-white pb-3">
+								“Provides a number of key features to keep mobile devices safe including looking at install applications to flag any that are known to be malicious or suspicious. Provides alerts when key OS updates are available and when breaches for products the user has installed have occurred."
+							</p>
+							<p>
+								<a class="my_a" href="#">
+									Read Full Review 
+								</a>
+								<img src="./img/GartnerPeerReview_logo_darkbg.png" alt="" class="w-25">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mb-5">
+			<div class="text-center my-5">
+				<h3 id="my_h32">
+					How we help our customers
+				</h3>
+			</div>
+			<div class="row">
+					<div class="col-md-12 col-lg-4">
+						<div class="mx-2  border-top">
+							<h5 class="my-4">
+								Schneider Electric
+							</h5>
+							<div>
+								<p class="text-secondary">
+									We provided immediate visibility into mobile risks and now secures 50,000 devices.
+								</p>
+							</div>
+							<p class="mb-5">
+								<a class="my_a" href="#">
+									<img src="./img/icon-case-study-32x32.png" >
+									Read Case Study
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-4">
+						<div class="mx-2  border-top">
+							<h5 class="my-4">
+								Federal systems integrator
+							</h5>
+							<div>
+								<p class="text-secondary">
+									 “Lookout enables people to work the way they want on their phones,” says security...
+								</p>
+							</div>
+							<p class="mb-5">
+								<a class="my_a" href="#">
+									<img src="./img/icon-case-study-32x32.png" >
+									Read Case Study
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-4">
+						<div class="mx-2  border-top">
+							<h5 class="my-4">
+								Top U.S. National Bank
+							</h5>
+							<div>
+								<p class="text-secondary">
+									After finding nearly 4,000 threats in the initial deployment, we now protect over 40,000 of the...
+								</p>
+							</div>
+							<p>
+								<a class="my_a" href="#">
+									<img src="./img/icon-case-study-32x32.png" >
+									Read Case Study
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="text-center my-5">
+					<p>
+						<a class="my_a" href="#">READ MORE CASE STUDIES</a>
+					</p>
+				</div>
+				
+				<div class="border" style="box-shadow: 3px 3px 10px 7px #ccc;">
+					<a href="#">
+						<img class="w-100" src="img/HP-Lookout-Secures-Our-Digital-Future_1688x800.png" >
+					</a>
+				</div>
+			</div>
+			<div id="my_div4" class="py-5 h-50">
+				<div class="h-25"></div>
+				<div>
+					<p id="my_p1" class="text-center">
+						Find out how you can secure your smartphones and tablets today
+					</p>
+				</div>
+				<div class="container text-center">
+					<div class="row no-gutters">
+							<div class="col-sm-12 col-md-4">
+								<div class="mx-1  bg-dark mb-sm-1 py-md-1">
+									<p>
+										<a class="text-white my_a1" href="#">
+											Request a Demo
+										</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<div class="mx-1  bg-dark mb-sm-1 py-md-1">
+									<p>
+										<a class="text-white my_a1" href="#">
+											Free Trial
+										</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<div class="mx-1  bg-dark mb-sm-1 py-md-1">
+									<p>
+										<a class="text-white my_a1" href="#">
+											Contact Sales
+										</a>
+									</p>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-dark py-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-md-6 mb-5">
+							<div>
+								<a href="#">
+									<img src="./img/lookout-logo-white-120x23.svg" width="20%">
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-12 offset-md-5 col-md-1 mb-5">
+							<div>
+								<a class="btn btn-dark" href="#">
+									Sign up for Demo
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col-md-3 col-sm-12">
+							<div id="my_div5">
+								<h6>Contact Lookout</h6>
+								<ul class="list-unstyled">
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Contact support
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Contact enterprise sales
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Worldwide office locations
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Careers
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-12">
+							<div id="my_div5">
+								<h6>Lookout Partners</h6>
+								<ul class="list-unstyled">
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Partner with Lookout
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Channel partners
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Technology partners
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Partner login
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-12">
+							<div id="my_div5">
+								<h6>Learn more</h6>
+								<ul class="list-unstyled">
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Mobile threats
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Mobile threat defense
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Spectrum of mobile risk
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Mobile phishing
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Mobile compliance risks
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											Post-perimeter security
+										</a>
+									</li>
+									<li class="mb-2">
+										<a style="text-decoration: none;" id="my_div5" href="#">
+											PPS Alliance
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<br>
+					<hr class="bg-light">
+					<br>
+					
+					<div class="row no-gutters text-light">
+						<div class="col-sm-12 col-md-8">
+							<p>
+								<a class="a20" href="#">Legal</a>
+								<span class="p20">|</span>
+								<a class="a20" href="#">Privacy Notice</a>
+								<span class="p20">|</span>
+								<a class="a20" href="#">Cookie Policy</a>
+								<span class="p20">|</span>
+								<a class="a20" href="#">Transparency Report</a>
+							</p>
+							<p class="p20">
+								© 2020 Lookout, Inc. LOOKOUT®, the Lookout Shield Design®, LOOKOUT with Shield Design®, SCREAM®, and SIGNAL FLARE® are registered trademarks of Lookout, Inc. in the United States and other countries. EVERYTHING IS OK®, LOOKOUT MOBILE SECURITY®, POWERED BY LOOKOUT®, and PROTECTED BY LOOKOUT®, are registered trademarks of Lookout, Inc. in the United States; and POST PERIMETER SECURITY ALLIANCE™ are trademarks of Lookout, Inc.
+							</p>
+							<p class="p20">
+								Android is a trademark of Google Inc.
+							</p>
+							<p class="p20">
+								Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.
+							</p>
+						</div>
+						<div class="col-sm-12 col-md-4">
+							<div class="row no-gutters">
+								<div class="col">
+										<a class="btn btn-light" style="text-decoration: none;" href="#">
+											<img src="img/social-linkedin.png" alt="">
+										</a>
+										<span>&nbsp;</span>
+								</div>
+									<div class="col">
+										<a class="btn btn-light" style="text-decoration: none;" href="#">
+											<img src="img/social-twitter.png" alt="">
+										</a>
+										<span>&nbsp;</span>
+									</div>
+									<div class="col">
+										<a class="btn btn-light" style="text-decoration: none;" href="#">
+											<img src="img/social-facebook.png" alt="">
+										</a>
+										<span>&nbsp;</span>
+									</div>
+									<div class="col">
+										<a class="btn btn-light" style="text-decoration: none;" href="#">
+											<img src="img/social-spotify-icon.png" alt="">
+										</a>
+										<span>&nbsp;</span>
+									</div>
+										<div class="col">
+											<a class="btn btn-light" style="text-decoration: none;" href="#">
+											<img src="img/social-podcast-icon.png" alt="">
+										</a>
+										</div>
+							</div>
+							<p class="text-center mt-5">United States (English)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

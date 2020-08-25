@@ -1,0 +1,78 @@
+/* logo */
+.my_logo{
+	height: 30px;
+	line-height: 30px;
+}
+/* 放大镜 */
+.my_logo1{width: 20px;}
+/* 修改h3字体在小屏和中屏大小 */
+@media (min-width:576px) {
+	#my_div6>h3{
+		font-size: 28px;
+		font-weight: 300;
+		font-family: Roboto,Helvetica,Arial,sans-serif;
+	}
+}
+@media (min-width:992px) {
+	#my_div6>h3{
+		font-size: 40px;
+	}
+}
+.my_p_2{
+	color: #656f74;
+	font-size: 17px;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+.border-bottom{
+	border-bottom: 2px solid #dee2e6 !important;
+}
+p>strong{
+	font-family: Roboto,Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	color: #656f74;
+	font-size: 17px;
+	line-height: 28px;
+}
+a{
+	color: #47c9c9;
+}
+a:hover{
+	color: #47c9c9;
+	text-decoration: none;
+}
+
+/* 渐变 */
+#my_div4{
+	background-image: linear-gradient(to right, #46C9C8 , #02C656);
+}
+
+@media (min-width:1px) {
+	#my_p1{
+		font-size: 22px;
+		color: #fff;
+	}
+}
+@media (min-width:768px) {
+	#my_p1{
+		font-size: 28px;
+	}
+}
+
+.my_a1{
+	text-decoration: none !important;
+}
+
+#my_div5{
+	color: #88959b;
+	font-size: 14px;
+}
+
+.a20{
+	color: #88959b;
+	font-size: 14px;
+}
+
+.p20{
+	font-size: 10px;
+	color: #88959b;
+}
